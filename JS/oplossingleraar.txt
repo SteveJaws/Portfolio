@@ -1,0 +1,58 @@
+let burger = document.getElementById("burger");
+let btns = burger.querySelector('#categories').children;
+let blueBar = document.getElementById("blueBar");
+
+//add events
+burger.addEventListener('click', menu)
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', (event) => {
+        if (btns[i].innerHTML.toLowerCase() == 'home') {
+            home(event)
+        } else if (btns[i].innerHTML.toLowerCase() == 'sds') {
+            sds(event)
+        }
+
+        burger.addEventListener('click', menu)
+    })
+}
+
+function menu() {
+    removeClass();
+    burger.classList.add("transmenu");
+    blueBar.classList.add("menuBlue");
+    document.getElementById("burgerImg").style.display = "none";
+    setTimeout(function () {
+        burger.style.height = "120%";
+        blueBar.style.width = '100%';
+        blueBar.style.height = '100%';
+        blueBar.style.borderRadius = '50%';
+        blueBar.style.transform = 'rotate(90deg)';
+        blueBar.style.top = '2%';
+        blueBar.style.left = '-55%';
+        document.getElementById("pickOne").style.display = "block";
+        document.getElementById("categories").style.display = "flex";
+    }, 400)
+    console.log('menu')
+    burger.removeEventListener('click', menu)
+}
+
+function home(event) {
+    event.stopPropagation()
+    removeClass();
+    burger.classList.add('menuHome');
+    blueBar.classList.add("menuBlueHome");
+    burger.classList.add('menuhome')
+}
+
+function sds(event) {
+
+    event.stopPropagation()
+    console.log('sds')
+}
+
+function removeClass() {
+    burger.classList.remove("menuHome");
+    burger.classList.remove("transmenu");
+    blueBar.classList.remove("menuBlue");
+    blueBar.classList.remove("menuBlueHome");
+}
