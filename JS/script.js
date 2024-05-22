@@ -137,6 +137,8 @@ function contact(){
     },400)
 }
 
+
+
 function removeClass(){
     burger.classList.remove("menuHome");
     burger.classList.remove("transmenu");

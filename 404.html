@@ -1,71 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - Page Not Found</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: rgba(37, 42, 52, 1); /* Black background color */
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-		color:white;
-    }
-    .top-bar {
-      background-color: rgba(8, 217, 214, 1); /* Blue top bar color */
-      width: 20%;
-      height: 50px;
-      transform: rotate(-15deg); /* Rotate the blue bar */
-      position: relative;
-		display:flex;
-		align-items:center;
-		justify-content:center;
-    }
-    .bottom-bar {
-      background-color: rgba(255, 46, 99, 1); /* Red bottom bar color */
-      width: 20%;
-      height: 50px;
-      transform: rotate(15deg); /* Rotate the red bar */
-      position: relative;
-		color: #fff; /* White text color */
-      font-family: Arial, sans-serif;
-    	display:flex;
-		align-items:center;
-		justify-content:center;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 3rem;
-    }
-    p {
-      margin: 0;
-      font-size: 1.5rem;
-    }
-	  a {
-  font-size: 160%;
-  position: absolute; /* Corrected typo */
-  right: 48%;
-		  text-decoration: none; /* Remove underline */
-  color: white; /* Inherit text color */
-}
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./input.css">
 </head>
-<body>
-  <div class="top-bar">
-    <h1>404</h1>
-  </div>
-  <div class="container">
-    <p></p>
-  </div>
-  <div class="bottom-bar">Page Not Found</div>
-	<a href="https://SteveJaws.github.io/Portfolio/index.html">go back</a>
+<body class="w-screen h-screen m-0 p-0">
+    <div id="burger" class="absolute none bar w-[20%] h-[12%] colorRed text-white font-bold text-[1vw] text-center z-10"><div class="absolute w-full h-full top-10" id="burgerText">Page Not Found</div></div>
+    <div id="blueBar" class="absolute bar w-screen h-20 colorBlue text-white font-bold text-[1vw] flex items-center justify-center"><div id="blueBarText">404</div></div>
+    <a href="https://SteveJaws.github.io/Portfolio" class="absolute left-[50%] top-[64%] animate-bounce text-white">try again</a>
+    <script>
+        window.onload = function (){
+            const blueBar = document.getElementById("blueBar");
+            const burger = document.getElementById("burger");
+            const blueBarText = document.getElementById("blueBarText");
+            const burgerText = document.getElementById("burgerText");
 
+            blueBarText.style.rotate = "-20deg";
+            burgerText.style.rotate = "20deg";
+            setTimeout(function(){
+                blueBar.classList.add("notBlue");
+                blueBar.style.top = "40%";
+                blueBar.style.rotate = "20deg";
+                blueBar.style.height = "20%";
+
+                setTimeout(function(){
+                    burger.classList.add("notBurger");
+                    burger.style.display = "block";
+                    burger.style.top = "36%";
+                    burger.style.left = "55%";
+                    burger.style.rotate = "-20deg";
+                },400)
+            },400)
+        }
+
+    </script>
 </body>
 </html>

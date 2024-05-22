@@ -572,6 +572,10 @@ video {
   left: 40%;
 }
 
+.right-1\/4 {
+  right: 25%;
+}
+
 .right-12 {
   right: 3rem;
 }
@@ -584,6 +588,10 @@ video {
   top: 25%;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
 .top-\[10\%\] {
   top: 10%;
 }
@@ -592,12 +600,28 @@ video {
   top: 8%;
 }
 
-.-right-1\/4 {
-  right: -25%;
+.left-\[50\%\] {
+  left: 50%;
 }
 
-.right-1\/4 {
-  right: 25%;
+.top-\[60\%\] {
+  top: 60%;
+}
+
+.top-\[64\%\] {
+  top: 64%;
+}
+
+.left-\[45\%\] {
+  left: 45%;
+}
+
+.left-\[48\%\] {
+  left: 48%;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .m-0 {
@@ -632,8 +656,20 @@ video {
   height: 33.333333%;
 }
 
+.h-1\/4 {
+  height: 25%;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
 .h-\[42\%\] {
   height: 42%;
+}
+
+.h-\[8\%\] {
+  height: 8%;
 }
 
 .h-\[90\%\] {
@@ -648,8 +684,8 @@ video {
   height: 100vh;
 }
 
-.h-1\/4 {
-  height: 25%;
+.h-\[12\%\] {
+  height: 12%;
 }
 
 .w-1\/2 {
@@ -660,12 +696,20 @@ video {
   width: 33.333333%;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
 
 .w-\[15\%\] {
   width: 15%;
+}
+
+.w-\[20\%\] {
+  width: 20%;
 }
 
 .w-\[9\%\] {
@@ -682,10 +726,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-1\/4 {
-  width: 25%;
 }
 
 .-rotate-12 {
@@ -752,17 +792,17 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .p-0 {
   padding: 0px;
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -783,6 +823,26 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[8vw\] {
+  font-size: 8vw;
+}
+
+.text-\[2vw\] {
+  font-size: 2vw;
+}
+
+.text-\[1vw\] {
+  font-size: 1vw;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-\[8vw\] {
+  font-weight: 8vw;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -796,6 +856,7 @@ video {
 
 body{
   font-family: 'Poppins', sans-serif;
+  background-color: rgb(37, 42, 52);
 }
 
 #projectImg{
@@ -1124,6 +1185,44 @@ a:hover{
   color: rgba(234, 234, 234, 1);
 }
 
+.notBlue{
+  animation: notBlue 0.5s ease-in-out;
+}
+
+@keyframes notBlue{
+  0%{
+    top: 0;
+    rotate: 0deg;
+    height: 0;
+  }
+
+  100%{
+    top: 40%;
+    rotate: 20deg;
+    height: 20%;
+  }
+}
+
+.notBurger{
+  animation: notBurger 0.5s ease-in-out;
+}
+
+@keyframes notBurger{
+  0%{
+    top: 0;
+    display: none;
+    left: 0;
+    height: 0;
+  }
+
+  100%{
+    top: 36%;
+    display: block;
+    left: 55%;
+    height: 8%;
+  }
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1145,4 +1244,3 @@ a:hover{
     display: block;
   }
 }
-  

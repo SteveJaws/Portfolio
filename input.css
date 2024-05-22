@@ -4,6 +4,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(37, 42, 52);
 }
 
 #projectImg{
@@ -321,4 +322,39 @@ a {
   a:hover{
     color: rgba(234, 234, 234, 1);
   }
-  
+
+  .notBlue{
+    animation: notBlue 0.5s ease-in-out;
+  }
+
+  @keyframes notBlue{
+    0%{
+        top: 0;
+        rotate: 0deg;
+        height: 0;
+    }
+    100%{
+        top: 40%;
+        rotate: 20deg;
+        height: 20%;
+    }
+  }
+
+  .notBurger{
+    animation: notBurger 0.5s ease-in-out;
+  }
+
+  @keyframes notBurger{
+    0%{
+        top: 0;
+        display: none;
+        left: 0;
+        height: 0;
+    }
+    100%{
+        top: 36%;
+        display: block;
+        left: 55%;
+        height: 8%;
+    }
+  }
