@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body class="m-0 p-0 overflow-hidden">
-  <div class="colorBlack h-screen w-screen none lg:block">
+  <div class="colorBlack h-screen w-screen">
     <div id="burger"
       class="absolute rightburger -rotate-12 colorRed widthburger heightburger flex justify-center items-center text-3xl hover:scale-110 hover:cursor-pointer transition-all">
       <div id="menuBtn" onclick="menu()" class="absolute h-full w-full"></div>
@@ -21,30 +21,26 @@
         <button onclick="contact()" class="hover:scale-110 transition-all colorWhite colorBlackTH m-5 rotate-12">Contact</button>
       </div>
     </div>
-    <div id="projectLink" class="none w-1/4 h-1/4 absolute right-1/4 top-[10%]"><a id="linklink" href="" class="text-white text-xl">visit</a></div>
+    <div id="projectLink" class="none w-1/4 h-1/4 absolute right-1/4 top-[10%]"><a id="linklink" href="" target="_blank" class="text-white text-xl">visit</a></div>
     <div id="blueBar" class="absolute colorBlue widthbluebar heightbluebar top-1/3 -left-1/3 -rotate-12 text-center">
-      <div id="projectTxt" class="w-1/2 h-1/2 none left-1/4 relative top-[8%] flex textWrap" style="font-size: 2.25rem;"><p></p></div>
+      <div id="projectTxt" class="w-1/2 h-1/2 none left-1/4 relative top-[8%] flex textWrap" style="font-size: 2.3vmax;"></div>
       <div id="homeTitle" class="relative top-1/3 fontStyle text-[380%]" >Hoi, ik ben Aron</div>
-      <div id="pickOne" class="colorBlackT relative topChoose animate-bounce none" style="font-size: 280%; rotate: 270deg;">
+      <div id="pickOne" class="colorBlackT relative topChoose animate-bounce none" style="font-size: 280%; rotate: 270deg; padding: 2%;">
         Choose--></div>
       <div id="contact" class="none flex flex-col items-center justify-start h-full w-full">
         <p class="m-10 text-xl">Mail me:<a href="mailto:vanduijnaronzakelijk@gmail.com">↗ vanduijnaronzakelijk@gmail.com</a></p>
       </div>
       <div id="work" class="none w-full h-full flex justify-center items-center">
         <div onclick="project(0)" class="w-[9%] h-[42%] m-5 flex flex-row hover:scale-105 transition-all hover:cursor-pointer">
-          <div id="workImg" class="w-[100%] h-full bounce"></div>
-          <div id="workName" class="w-[15%] h-full flex justify-start items-center"><div class="rotate-[-90deg] m-3 relative right-12">bounce</div></div>
-        </div>
-        <div onclick="project(1)" class="w-[9%] h-[42%] m-5 flex flex-row hover:scale-105 transition-all hover:cursor-pointer">
-          <div id="workImg"" class="w-[100%] h-full undertale"></div>
+          <div id="workImg" class="w-[100%] h-full undertale"></div>
           <div id="workName" class="w-[15%] h-full flex justify-start items-center"><div class="rotate-[-90deg] m-3 relative right-12">Undertale</div></div>
         </div>
       </div>
       <div id="portret" class="none w-[90%] h-[90%] absolute bottom-[5%]"></div>  
     </div>
-    <div id="aboutInfo" class="none w-1/3 h-1/3 absolute left-[40%] top-1/4 textWrap text-white text-[170%]">Hoi ik ben Aron van Duijn een Front-end developer
-      ik ben geboren op 22 november 2005 en ik hou er van om een potje te gamen. Ik vind het leuk om mijn desings tot leven te brengen in code. 
-      Ook houd ik van experimenteren met code zelf beheers ik HTML CSS Javscript en Tailwind goed. <a href="./cv.pdf" class="text-white">-> CV <-</a>
+    <div id="aboutInfo" class="none w-1/3 h-1/3 absolute left-[40%] top-1/4 textWrap text-white text-[170%]">Hoi ik ben Aron van Duijn een Software developer
+      ik ben geboren op 22 november 2005 en ik hou er van om een potje te gamen. Ik vind het leuk om mijn creativiteit in code naar buiten te brengen.
+      Zelf vind ik het heel leuk om in unity games te maken. Ik beheers HTML, CSS, JS goed ook werk ik wel eens met vue-js en tailwind en in unity codeer ik met C#. <a href="./cv.pdf" class="text-white">-> CV <-</a>
     </div>
     <div id="projectImg" class="none w-1/3 h-1/3 bg-black absolute top-[10%] left-[10%]"></div>
   </div>
